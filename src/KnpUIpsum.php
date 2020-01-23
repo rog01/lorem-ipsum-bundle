@@ -27,7 +27,7 @@ class KnpUIpsum
      * @param int $count
      * @return string
      */
-    public function getParagraphs(int $count = 3): string
+    public function getParagraphs(int $count=3): string
     {
         $paragraphs = array();
         for ($i = 0; $i < $count; $i++) {
