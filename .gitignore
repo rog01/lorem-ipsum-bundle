@@ -1,10 +1,10 @@
 /vendor/
-.idea
+/.idea/*
 composer.lock
 /phpunit.xml
 /tests/cache
 
-/bin
+/bin/*
 /config
 symfony.lock
 composer.lock
