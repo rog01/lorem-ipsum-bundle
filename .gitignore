@@ -6,7 +6,6 @@ composer.lock
 
 symfony.lock
 composer.lock
-README.md
 .env.dist
 /templates/
 /public/
