@@ -1,11 +1,9 @@
 /vendor/
-/.idea/*
+/.idea/
 composer.lock
 /phpunit.xml
 /tests/cache
 
-/bin/*
-/config
 symfony.lock
 composer.lock
 README.md
