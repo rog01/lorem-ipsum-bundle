@@ -16,6 +16,11 @@
         "symfony/dependency-injection": "^3.4 || ^4.0",
         "symfony/http-kernel": "^3.4 || ^4.0"
     },
+    "require-dev": {
+        "symfony/framework-bundle": "^3.4 || ^4.0",
+        "symfony/phpunit-bridge": "^3.4 || ^4.0",
+        "symfony/browser-kit": "^5.1@dev"
+    },
     "autoload": {
         "psr-4": {
             "KnpU\\LoremIpsumBundle\\": "src/"
@@ -25,8 +30,5 @@
         "psr-4": {
             "KnpU\\LoremIpsumBundle\\Tests\\": "tests/"
         }
-    },
-    "require-dev": {
-        "symfony/phpunit-bridge": "^5.1@dev"
     }
 }
