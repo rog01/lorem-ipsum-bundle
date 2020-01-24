@@ -1,5 +1,5 @@
 {
-    "name": "rog01/l-i-bundle",
+    "name": "knpuniversity/lorem-ipsum-bundle",
     "description": "Happy Lorem Ipsum",
     "type": "project",
     "license": "MIT",
@@ -13,7 +13,7 @@
     "require": {
         "php": "^7.1.3",
         "symfony/config": "^3.4 || ^4.0",
-        "symfony/dependency-injection": "^3.4 || ^4.0",
+        "symfony/dependency-injection": "4.1.12",
         "symfony/http-kernel": "^3.4 || ^4.0"
     },
     "require-dev": {
