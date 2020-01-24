@@ -6,7 +6,12 @@
 
     <services>
         <service id="knpu_lorem_ipsum.knpu_ipsum" class="KnpU\LoremIpsumBundle\KnpUIpsum" public="true">
-            <argument type="service" id="knpu_lorem_ipsum.knpu_word_provider" />
+            <argument type="collection">
+                <argument type="service" id="knpu_lorem_ipsum.word_provider" />
+            </argument>
+        </service>
+        <service id="knpu_lorem_ipsum.knpu_word_provider" class="KnpU\LoremIpsumBundle\KnpUWordProvider">
+            <tag name="knpu_ipsum_word_provider" />
         </service>
         <service id="knpu_lorem_ipsum.controller.ipsum_api_controller" class="KnpU\LoremIpsumBundle\Controller\IpsumApiController" public="true">
             <argument type="service" id="knpu_lorem_ipsum.knpu_ipsum" />
