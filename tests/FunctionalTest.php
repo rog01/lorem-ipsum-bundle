@@ -56,8 +56,9 @@ class KnpULoremIpsumTestingKernel extends Kernel
     public function registerContainerConfiguration(LoaderInterface $loader)
     {
         $loader->load(function(ContainerBuilder $container) {
-            $container->register('stub_word_list', StubWordList::class);
-            $container->loadFromExtension('knpu_lorem_ipsum', $this->knpUIpsumConfig);
+            $container->register('stub_word_list', StubWordList::class)
+            ->addTag('knpu_ipsum_word_provider');
+            //$container->loadFromExtension('knpu_lorem_ipsum', $this->knpUIpsumConfig);
         });
     }
 
